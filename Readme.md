@@ -38,6 +38,7 @@ NaviPassRead -f [檔案路徑]
         "SSH_Password":"",
         "ServiceProvider":"GoogleCloud",
         "UserName":"alice"
-    }]
+    }
+]
 
 ```
