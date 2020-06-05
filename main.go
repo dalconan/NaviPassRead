@@ -9,16 +9,7 @@ import (
 	"github.com/forgoer/openssl"
 	"io/ioutil"
 	"os"
-	"strconv"
 )
-
-func Hex2Bin(hex string) (string, error) {
-	ui, err := strconv.ParseUint(hex, 16, 64)
-	if err != nil {
-		return "", err
-	}
-	return fmt.Sprintf("%016b", ui), nil
-}
 
 type NaviConnections struct {
 	XMLName    xml.Name         `xml:"Connections"`
@@ -113,6 +104,5 @@ func main() {
 	}
 
 	fmt.Println(string(jsonStr))
-
 
 }
